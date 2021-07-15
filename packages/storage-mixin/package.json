@@ -54,7 +54,7 @@
   },
   "devDependencies": {
     "depcheck": "^1.4.0",
-    "electron": "^6.1.12",
+    "electron": "^13.1.6",
     "electron-mocha": "^8.1.2",
     "electron-rebuild": "^2.3.5",
     "eslint": "^7.25.0",

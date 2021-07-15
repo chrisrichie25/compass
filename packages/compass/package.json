@@ -386,7 +386,7 @@
     "cross-env": "^7.0.3",
     "depcheck": "^1.4.0",
     "download": "^8.0.0",
-    "electron": "^6.1.12",
+    "electron": "^13.1.6",
     "electron-devtools-installer": "^3.2.0",
     "electron-mocha": "^8.2.2",
     "electron-rebuild": "^2.3.5",
