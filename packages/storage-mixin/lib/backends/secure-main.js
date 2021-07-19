@@ -1,4 +1,5 @@
-const keytar = require('keytar');
+// const keytar = require('keytar');
+const keytar = require('./keytar-stub');
 const debug = require('debug')('mongodb-storage-mixin:backends:secure-main');
 
 if (process && process.type === 'browser') {
