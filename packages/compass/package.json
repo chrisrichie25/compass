@@ -219,7 +219,7 @@
   "scripts": {
     "install": "node scripts/download-akzidenz.js",
     "electron-rebuild": "electron-rebuild --force --only kerberos,keytar,interruptor",
-    "old-prestart": "rm -rf .compiled-sources && npm run electron-rebuild",
+    "prestart": "rm -rf .compiled-sources && npm run electron-rebuild",
     "start": "hadron-build develop",
     "pretest": "npm run electron-rebuild",
     "test": "hadron-build test",
@@ -320,7 +320,7 @@
     "highlight.js": "^8.9.1",
     "jquery": "^3.5.0",
     "kerberos": "^1.1.5",
-    "keytar": "^7.7.0",
+    "keytar": "^6.0.1",
     "less": "^2.6.1",
     "local-links": "^1.4.0",
     "lodash.assign": "^ 3.2.0",
