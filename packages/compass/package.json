@@ -218,12 +218,12 @@
   },
   "scripts": {
     "install": "node scripts/download-akzidenz.js",
-    "electron-rebuild": "electron-rebuild --force --only kerberos,keytar,interruptor",
+    "electron-rebuild": "electron-rebuild --force --version=13.1.6 --only kerberos,interruptor",
     "prestart": "rm -rf .compiled-sources && npm run electron-rebuild",
     "start": "hadron-build develop",
     "pretest": "npm run electron-rebuild",
     "test": "hadron-build test",
-    "posttest": "node ../../scripts/killall-mongo.js && node ../../scripts/rebuild.js kerberos keytar interruptor",
+    "posttest": "node ../../scripts/killall-mongo.js && node ../../scripts/rebuild.js kerberos interruptor",
     "check": "npm run lint && npm run depcheck",
     "clean": "hadron-build clean",
     "compile-ui": "hadron-build ui",
@@ -244,7 +244,7 @@
     "depcheck": "depcheck",
     "pretest-ci": "npm run electron-rebuild",
     "test-ci": "xvfb-maybe electron-mocha --no-sandbox ./test/**/*.test.js",
-    "posttest-ci": "node ../../scripts/killall-mongo.js && node ../../scripts/rebuild.js kerberos keytar interruptor"
+    "posttest-ci": "node ../../scripts/killall-mongo.js && node ../../scripts/rebuild.js kerberos interruptor"
   },
   "repository": {
     "type": "git",
@@ -320,7 +320,7 @@
     "highlight.js": "^8.9.1",
     "jquery": "^3.5.0",
     "kerberos": "^1.1.5",
-    "keytar": "^5.1.0",
+    "keytar": "^7.7.0",
     "less": "^2.6.1",
     "local-links": "^1.4.0",
     "lodash.assign": "^ 3.2.0",
@@ -414,10 +414,6 @@
   },
   "optionalDependencies": {
     "vscode-windows-registry": "1.0.2"
-  },
-  "engines": {
-    "node": "^12.9.0",
-    "npm": ">=6.13.0"
   },
   "bugs": {
     "url": "https://docs.mongodb.com/compass/current/#contact",
