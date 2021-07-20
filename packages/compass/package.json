@@ -320,7 +320,7 @@
     "highlight.js": "^8.9.1",
     "jquery": "^3.5.0",
     "kerberos": "^1.1.5",
-    "keytar": "^6.0.1",
+    "keytar": "^5.1.0",
     "less": "^2.6.1",
     "local-links": "^1.4.0",
     "lodash.assign": "^ 3.2.0",

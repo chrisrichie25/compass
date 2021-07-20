@@ -3,8 +3,8 @@ var BaseBackend = require('./base');
 var _ = require('lodash');
 var debug = require('debug')('mongodb-storage-mixin:backends:secure');
 
-const keytar = require('keytar');
-// const keytar = require('./keytar-stub');
+// const keytar = require('keytar');
+const keytar = require('./keytar-stub');
 
 function SecureBackend(options) {
   if (!(this instanceof SecureBackend)) {
